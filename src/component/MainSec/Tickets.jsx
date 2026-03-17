@@ -1,24 +1,33 @@
 import React from 'react';
 
-const Tickets = () => {
+const Tickets = ({ticket}) => {
+//       {
+//     "id": 1010,
+//     "title": "Search function not returning results",
+//     "description": "Search queries return empty results incorrectly.",
+//     "customer": "Lamia Chowdhury",
+//     "priority": "medium",
+//     "status": "open",
+//     "createdAt": "3/7/26"
+//   },
     return (
-     <div className="card w-96 bg-base-100 card-sm shadow-sm">
+     <div className="card  bg-base-100 card-sm shadow-sm">
          <div className="card-body">
             <div className='flex justify-between'>
-                 <h2 className="card-title">Small Card</h2>
-                <div class="badge badge-success bg-green-200 rounded-2xl  font-semibold"><i class="fa-solid fa-circle text-green-600 "></i>Open
+                 <h2 className="card-title">{ticket.title}</h2>
+                <div className="badge badge-success bg-green-200 rounded-2xl  font-semibold"><i className="fa-solid fa-circle text-green-600 "></i>{ticket.status}
                 </div>
             </div>
-                 <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                 <p>{ticket.description}</p>
              <div className='flex justify-between '>
                 <div className='flex gap-3'>
-                    <p>#1003</p>
-                    <p className='text-red-600 font-semibold'>HIGH PRIORITY</p>
+                    <p>#{ticket.id}</p>
+                    <p className='text-red-600 font-semibold'>{ticket.priority} PRIORITY</p>
 
                 </div>
                 <div className='flex gap-3'>
-                    <h1>John Smith</h1>
-                    <p><i class="fa-regular fa-calendar"></i> 1/15/2024</p>
+                    <h1>{ticket.customer}</h1>
+                    <p><i className="fa-regular fa-calendar"></i> {ticket.createdAt}</p>
                 </div>
 
              </div>

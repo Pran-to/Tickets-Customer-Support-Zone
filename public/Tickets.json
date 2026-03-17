@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1001,
+    "title": "Login issue on mobile app",
+    "description": "User unable to log in using correct credentials on Android device.",
+    "customer": "Rahim Uddin",
+    "priority": "high",
+    "status": "open",
+    "createdAt": "3/10/26"
+  },
+  {
+    "id": 1002,
+    "title": "Payment not processed",
+    "description": "Customer reported payment failure despite successful bank transaction.",
+    "customer": "Nusrat Jahan",
+    "priority": "high",
+    "status": "In-Progress",
+    "createdAt": "3/11/26"
+  },
+  {
+    "id": 1003,
+    "title": "UI glitch on dashboard",
+    "description": "Dashboard widgets overlap on smaller screens.",
+    "customer": "Tanvir Ahmed",
+    "priority": "medium",
+    "status": "open",
+    "createdAt": "3/12/26"
+  },
+  {
+    "id": 1004,
+    "title": "Password reset email not received",
+    "description": "User did not receive password reset link after multiple attempts.",
+    "customer": "Farhana Akter",
+    "priority": "high",
+    "status": "open",
+    "createdAt": "3/9/26"
+  },
+  {
+    "id": 1005,
+    "title": "Slow loading time",
+    "description": "Application takes too long to load on homepage.",
+    "customer": "Imran Hossain",
+    "priority": "low",
+    "status": "open",
+    "createdAt": "3/8/26"
+  },
+  {
+    "id": 1006,
+    "title": "Error 500 on checkout",
+    "description": "Server error occurs when trying to complete purchase.",
+    "customer": "Shila Rahman",
+    "priority": "high",
+    "status": "In-Progress",
+    "createdAt": "3/13/26"
+  },
+  {
+    "id": 1007,
+    "title": "Profile update not saving",
+    "description": "Changes to user profile are not being saved.",
+    "customer": "Mahmud Hasan",
+    "priority": "medium",
+    "status": "open",
+    "createdAt": "3/14/26"
+  },
+  {
+    "id": 1008,
+    "title": "Notification not working",
+    "description": "Push notifications are not received on iOS devices.",
+    "customer": "Sadia Islam",
+    "priority": "high",
+    "status": "In-Progress",
+    "createdAt": "3/10/26"
+  },
+  {
+    "id": 1009,
+    "title": "Incorrect billing amount",
+    "description": "User charged more than expected for subscription.",
+    "customer": "Jahid Karim",
+    "priority": "high",
+    "status": "open",
+    "createdAt": "3/15/26"
+  },
+  {
+    "id": 1010,
+    "title": "Search function not returning results",
+    "description": "Search queries return empty results incorrectly.",
+    "customer": "Lamia Chowdhury",
+    "priority": "medium",
+    "status": "open",
+    "createdAt": "3/7/26"
+  },
+  {
+    "id": 1011,
+    "title": "App crash on startup",
+    "description": "App crashes immediately after launch on some devices.",
+    "customer": "Arif Khan",
+    "priority": "high",
+    "status": "In-Progress",
+    "createdAt": "3/16/26"
+  },
+  {
+    "id": 1012,
+    "title": "Language translation issue",
+    "description": "Some text not properly translated in Bangla version.",
+    "customer": "Mitu Das",
+    "priority": "low",
+    "status": "open",
+    "createdAt": "3/11/26"
+  }
+]
