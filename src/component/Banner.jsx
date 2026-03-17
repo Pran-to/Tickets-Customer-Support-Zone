@@ -7,7 +7,7 @@ const Banner = () => {
         <h1 className="text-xl font-semibold">In-Progress</h1>
         <h1 className="text-5xl font-semibold">0</h1>
       </div>
-      <div className="bg-linear-to-r from-[#54CF68] to-[#00827A] text-white w-[50%] h-52      text-center content-center rounded-xl">
+      <div className="bg-linear-to-r from-[#54CF68] to-[#00827A] text-white w-[50%] h-52    text-center content-center rounded-xl">
         <h1 className="text-xl font-semibold">In-Progress</h1>
         <h1 className="text-5xl font-semibold">0</h1>
       </div>
