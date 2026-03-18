@@ -71,7 +71,7 @@ const NavBar = () => {
         </ul>
       </div>
       <div className="ml-20 md:ml-5 ">
-        <a className="btn bg-linear-to-r from-[#6b36e5] to-[#995cf0] text-white"><i className="fa-solid fa-plus "></i>New Ticket</a>
+        <a href="#Main" className="btn bg-linear-to-r from-[#6b36e5] to-[#995cf0] text-white"><i className="fa-solid fa-plus "></i>New Ticket</a>
       </div>
     </div>
   );

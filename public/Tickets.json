@@ -4,7 +4,7 @@
     "title": "Login issue on mobile app",
     "description": "User unable to log in using correct credentials on Android device.",
     "customer": "Rahim Uddin",
-    "priority": "high",
+    "priority": "HIGH PRIORITY",
     "status": "open",
     "createdAt": "3/10/26"
   },
@@ -13,7 +13,7 @@
     "title": "Payment not processed",
     "description": "Customer reported payment failure despite successful bank transaction.",
     "customer": "Nusrat Jahan",
-    "priority": "high",
+    "priority": "HIGH PRIORITY",
     "status": "In-Progress",
     "createdAt": "3/11/26"
   },
@@ -22,7 +22,7 @@
     "title": "UI glitch on dashboard",
     "description": "Dashboard widgets overlap on smaller screens.",
     "customer": "Tanvir Ahmed",
-    "priority": "medium",
+    "priority": "MEDIUM PRIORITY",
     "status": "open",
     "createdAt": "3/12/26"
   },
@@ -31,7 +31,7 @@
     "title": "Password reset email not received",
     "description": "User did not receive password reset link after multiple attempts.",
     "customer": "Farhana Akter",
-    "priority": "high",
+    "priority": "HIGH PRIORITY",
     "status": "open",
     "createdAt": "3/9/26"
   },
@@ -40,7 +40,7 @@
     "title": "Slow loading time",
     "description": "Application takes too long to load on homepage.",
     "customer": "Imran Hossain",
-    "priority": "low",
+    "priority": "LOW PRIORITY",
     "status": "open",
     "createdAt": "3/8/26"
   },
@@ -49,7 +49,7 @@
     "title": "Error 500 on checkout",
     "description": "Server error occurs when trying to complete purchase.",
     "customer": "Shila Rahman",
-    "priority": "high",
+    "priority": "HIGH PRIORITY",
     "status": "In-Progress",
     "createdAt": "3/13/26"
   },
@@ -58,7 +58,7 @@
     "title": "Profile update not saving",
     "description": "Changes to user profile are not being saved.",
     "customer": "Mahmud Hasan",
-    "priority": "medium",
+    "priority": "MEDIUM PRIORITY",
     "status": "open",
     "createdAt": "3/14/26"
   },
@@ -67,7 +67,7 @@
     "title": "Notification not working",
     "description": "Push notifications are not received on iOS devices.",
     "customer": "Sadia Islam",
-    "priority": "high",
+    "priority": "HIGH PRIORITY",
     "status": "In-Progress",
     "createdAt": "3/10/26"
   },
@@ -76,7 +76,7 @@
     "title": "Incorrect billing amount",
     "description": "User charged more than expected for subscription.",
     "customer": "Jahid Karim",
-    "priority": "high",
+    "priority": "HIGH PRIORITY",
     "status": "open",
     "createdAt": "3/15/26"
   },
@@ -85,7 +85,7 @@
     "title": "Search function not returning results",
     "description": "Search queries return empty results incorrectly.",
     "customer": "Lamia Chowdhury",
-    "priority": "medium",
+    "priority": "MEDIUM PRIORITY",
     "status": "open",
     "createdAt": "3/7/26"
   },
@@ -94,7 +94,7 @@
     "title": "App crash on startup",
     "description": "App crashes immediately after launch on some devices.",
     "customer": "Arif Khan",
-    "priority": "high",
+    "priority": "HIGH PRIORITY",
     "status": "In-Progress",
     "createdAt": "3/16/26"
   },
@@ -103,7 +103,7 @@
     "title": "Language translation issue",
     "description": "Some text not properly translated in Bangla version.",
     "customer": "Mitu Das",
-    "priority": "low",
+    "priority": "LOW PRIORITY",
     "status": "open",
     "createdAt": "3/11/26"
   }
