@@ -12,15 +12,25 @@ const ticketsProp = ticketsData();
 
 function App() {
   const [progress, setProgress] = useState(0);
+  const [resolve, setResolve] = useState(0);
   const [taskStatus, setTaskStatus] = useState([]);
+  const [resolveStatus, setResolveStatus] = useState([]);
   const handelCard = (id) => {
     setTaskStatus([...taskStatus, id]);
     setProgress(progress + 1);
   };
+  const handelComplete =(id)=>{
+    setResolveStatus([...resolveStatus,id])
+    setProgress(progress - 1);
+    setResolve(resolve+1)
+    const ne = taskStatus.filter(n => id != n)
+    setTaskStatus(ne)
+
+  }
   return (
     <>
       <NavBar></NavBar>
-      <Banner progress={progress}></Banner>
+      <Banner progress={progress} resolve={resolve}></Banner>
       <Suspense
         fallback={
           <div className="flex justify-center items-center ">
@@ -30,7 +40,9 @@ function App() {
       >
         <MainSec
           taskStatus={taskStatus}
+          resolveStatus={resolveStatus}
           handelCard={handelCard}
+          handelComplete={handelComplete}
           ticketsProp={ticketsProp}
         ></MainSec>
       </Suspense>

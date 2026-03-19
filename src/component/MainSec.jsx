@@ -1,8 +1,15 @@
 import React, { use } from "react";
 import Tickets from "./MainSec/Tickets";
 import Task from "./MainSec/Task";
+import Resolved from "./MainSec/Resolved";
 
-const MainSec = ({ ticketsProp, handelCard, taskStatus }) => {
+const MainSec = ({
+  ticketsProp,
+  handelCard,
+  taskStatus,
+  handelComplete,
+  resolveStatus,
+}) => {
   const allTickets = use(ticketsProp);
 
   return (
@@ -17,12 +24,23 @@ const MainSec = ({ ticketsProp, handelCard, taskStatus }) => {
           {taskStatus.length == 0
             ? "Select a ticket to add to Task Status"
             : taskStatus.map((task, i) => (
-                <Task allTickets={allTickets} task={task} key={i}></Task>
+                <Task
+                  handelComplete={handelComplete}
+                  allTickets={allTickets}
+                  task={task}
+                  key={i}
+                ></Task>
               ))}
         </div>
 
-        <h1 className="mb-4 text-xl font-semibold">Resolved Task</h1>
-        <div>No resolved tasks yet.</div>
+        <h1 className="my-5 text-xl font-semibold">Resolved Task</h1>
+        <div >
+          {
+            resolveStatus.length == 0 ? "No resolved tasks yet":
+          resolveStatus.map((re, i) => (
+            <Resolved allTickets={allTickets} re={re} key={i}></Resolved>
+          ))}
+        </div>
       </div>
 
       {/* Tickets card section  */}
