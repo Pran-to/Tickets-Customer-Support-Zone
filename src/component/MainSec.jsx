@@ -1,4 +1,3 @@
-import React, { use } from "react";
 import Tickets from "./MainSec/Tickets";
 import Task from "./MainSec/Task";
 import Resolved from "./MainSec/Resolved";
@@ -9,8 +8,9 @@ const MainSec = ({
   taskStatus,
   handelComplete,
   resolveStatus,
+  ticketsP
 }) => {
-  const allTickets = use(ticketsProp);
+  const allTickets = ticketsP;
 
   return (
     <div
@@ -34,21 +34,21 @@ const MainSec = ({
         </div>
 
         <h1 className="my-5 text-xl font-semibold">Resolved Task</h1>
-        <div >
-          {
-            resolveStatus.length == 0 ? "No resolved tasks yet":
-          resolveStatus.map((re, i) => (
-            <Resolved allTickets={allTickets} re={re} key={i}></Resolved>
-          ))}
+        <div>
+          {resolveStatus.length == 0
+            ? "No resolved tasks yet"
+            : resolveStatus.map((re, i) => (
+                <Resolved ticketsProp={ticketsProp} re={re} key={i}></Resolved>
+              ))}
         </div>
       </div>
 
       {/* Tickets card section  */}
-      <div>
+      <div className="flex-3">
         <h1 className="mb-4 text-xl font-semibold">Customer Tickets</h1>
         <div className="md:grid grid-cols-2 space-y-3 gap-5 ">
           {allTickets.map((ticket, i) => (
-            <Tickets handelCard={handelCard} ticket={ticket} key={i}></Tickets>
+            <Tickets  handelCard={handelCard} ticket={ticket} key={i}></Tickets>
           ))}
         </div>
       </div>

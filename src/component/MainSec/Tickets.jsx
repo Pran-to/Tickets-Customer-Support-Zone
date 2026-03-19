@@ -10,6 +10,7 @@ const Tickets = ({ ticket, handelCard }) => {
     <div
       onClick={() => {
         handelCard(ticket.id);
+        
       }}
       className="card  bg-base-100 card-sm shadow-sm cursor-pointer"
     >

@@ -1,7 +1,7 @@
-import React from "react";
+import React, { use } from "react";
 
-const Resolved = ({ allTickets, re }) => {
-  const ne = allTickets.filter((r) => re == r.id);
+const Resolved = ({ ticketsProp, re }) => {
+  const ne = use(ticketsProp).filter((r) => re == r.id);
   return (
     <div>
       <div className="  rounded-2xl p-4  my-2 shadow-lg ">
