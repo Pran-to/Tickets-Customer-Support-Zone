@@ -47,7 +47,8 @@ const MainSec = ({
       <div className="flex-3">
         <h1 className="mb-4 text-xl font-semibold">Customer Tickets</h1>
         <div className="md:grid grid-cols-2 space-y-3 gap-5 ">
-          {allTickets.map((ticket, i) => (
+          {allTickets.length == 0? "There is No Tickets Left" :
+          allTickets.map((ticket, i) => (
             <Tickets  handelCard={handelCard} ticket={ticket} key={i}></Tickets>
           ))}
         </div>
