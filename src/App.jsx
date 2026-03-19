@@ -4,6 +4,7 @@ import Banner from "./component/Banner";
 import MainSec from "./component/MainSec";
 import NavBar from "./component/NavBar";
 import { toast, ToastContainer } from "react-toastify";
+import Footer from "./component/Footer";
 
 const ticketsData = async () => {
   const res = await fetch("/Tickets.json");
@@ -57,6 +58,7 @@ function App() {
           ticketsP={ticketsP}
         ></MainSec>
       </Suspense>
+      <Footer></Footer>
     </>
   );
 }
