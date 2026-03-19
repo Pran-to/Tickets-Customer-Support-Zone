@@ -1,12 +1,31 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 1. What is JSX, and why is it used?
 
-Currently, two official plugins are available:
+JSX (JavaScript XML) is a syntax extension for JavaScript that allows writing HTML-like code inside React. It makes UI code more readable and easier to write by combining JavaScript and HTML structure in one place.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 2. What is the difference between State and Props?
 
-## Expanding the ESLint configuration
+* **State** is a local data storage that belongs to a component and can change over time.
+* **Props** are read-only data passed from a parent component to a child component.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 3. What is the useState hook, and how does it work?
+
+`useState` is a React hook used to manage state in functional components. It returns a state variable and a function to update it.
+
+Example:
+const [count, setCount] = useState(0);
+```
+
+* `count` → current state
+* `setCount` → function to update state
+
+## 4. How can you share state between components in React?
+
+State can be shared by **lifting state up** to a common parent component and passing it down to child components via props.
+
+## 5. How is event handling done in React?
+
+Event handling in React is done using event handlers like `onClick`, `onChange`, etc., with functions.
+
+Example:
+<button onClick={handleClick}>Click</button>
